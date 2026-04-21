@@ -1,60 +1,145 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jenny & Mathias </title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff8f7;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      padding: 60px 20px;
-      background: #f3dede;
-    }
-    section {
-      max-width: 700px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #b76e79;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vårt Bröllop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f4fbf4;
+  color: #2e3d2f;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(47,111,62,0.6), rgba(47,111,62,0.6)),
+              url('https://images.unsplash.com/photo-1529636798458-92182e662485');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 14px 26px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 32px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* RSVP BUTTON */
+.center {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #2f6f3e;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Mathias & Jenny</h1>
-    <p>Vi gifter oss den ... </p>
-    <p>Helsingborg</p>
-  </header>
 
-  <section>
-    <h2>Välkommen</h2>
-    <p>Vi ser fram emot att fira vår stora dag med er.</p>
-  </section>
+<!-- HERO -->
+<div class="hero">
+  <h1>Mathias & Jenny</h1>
+  <p>Vi gifter oss</p>
+  <p>14 augusti 2026 · Stockholm</p>
+  <a href="#rsvp" class="btn">OSA</a>
+</div>
 
-  <section>
-    <h2>Information</h2>
-    <p><strong>Vigsel:</strong> 14:00</p>
-    <p><strong>Middag:</strong> 17:00</p>
-    <p><strong>Plats:</strong> Lägg till adress här</p>
-  </section>
+<!-- INFO -->
+<section>
+  <h2>Bröllopsinformation</h2>
+  <div class="card">
+    <p><b>Vigsel:</b> 14:00</p>
+    <p><b>Middag:</b> 17:00</p>
+    <p><b>Plats:</b> - </p>
+  </div>
+</section>
 
-  <section>
-    <h2>OSA</h2>
+<!-- SCHEDULE -->
+<section>
+  <h2>Schema</h2>
+  <div class="card">
+    <p>14:00 – Vigsel</p>
+    <p>15:30 – Mingel</p>
+    <p>17:00 – Middag</p>
+    <p>20:00 – Fest 🎉</p>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section id="rsvp">
+  <h2>OSA</h2>
+  <div class="card center">
     <p>Svara senast 1 juli 2026</p>
-    <a class="btn" href="mailto:mathias&jenny@gmail.com">Skicka OSA</a>
-  </section>
+    <a class="btn" href="https://forms.gle/cmQah5rYuueAUZod9">Anmäl dig</a>
+  </div>
+</section>
+
+<!-- Bilder -->
+<section>
+  <h2>Dela bilder 📸</h2>
+  <div class="card center">
+    <p>Ladda upp era bilder från bröllopet</p>
+    <a class="btn" href="https://drive.google.com/drive/folders/1H6H1KlEGyAt_K2ZzNKTcCLj_haYpAZHu?usp=sharing">Ladda upp</a>
+  </div>
+</section>
+
+<footer>
+  <p>Vi längtar efter att fira med er 💚</p>
+</footer>
+
 </body>
 </html>
